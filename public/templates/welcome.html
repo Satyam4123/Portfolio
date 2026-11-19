@@ -5,84 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../src/output.css">
 </head>
 
-<body>
+<body class="h-64 w-full bg-[url('../../src/assets/fancy-cushion.png')] bg-cover bg-center bg-no-repeat text-white font-serif text-2xl font-bold italic z-10 sticky
+">
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/TheGoodCoder12">My Github</a></li>
-                <!-- <li><img src="../assets/dark-mode.svg" alt="dark-mode-icon"></li> -->
-                <!-- Wrote the above line to implement dark and light mode, since my mid sems are nearby had only an hour to spare, so can't do it :( -->
+            <ul class="flex p-2 justify-around bg-violet-300">
+                <li class="transition-transform duration-300 hover:scale-105"><a href="#home">Home</a></li>
+                <li class="transition-transform duration-300 hover:scale-105"><a href="#portfolio">Portfolio</a></li>
+                <li class="transition-transform duration-300 hover:scale-105"><a href="#contact">Contact</a></li>
+                <li class="transition-transform duration-300 hover:scale-105"><a href="https://github.com/TheGoodCoder12">My Github</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Introduction Section -->
-    <section id="home">
-        <div class="intro">
+    <section id="home " class="flex justify-center p-10 text-5xl">
+        <div class="intro ">
             <h1>Hello, I'm Satyam Shukla</h1>
-            <p>Coding Enthusiast | Engineering Student</p>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project" id="one">
-                <div class="title">
-                    <!-- <img src="../assets/flymusica.svg" alt="Project 1"> -->
-                    <h3>FlyMusica</h3>
-                </div>
-                <p>A free client side music player webapp, in which you can feed your own songs. <br>Technologies used:
-                    HTML, CSS, JS</p>
-            </div>
-            <div class="project" id="two">
-                <div class="title">
-                    <!-- <img src="../assets/detective.svg" alt="Project 2"> -->
-                    <h3>The-Mind-Map</h3>
-                </div>
-                <p>Made on the theme of Sherlock Holmes and helping him in his investigations. <br>Technologies used:
-                    HTML, CSS, Python, JavaScript</p>
-            </div>
-            <div class="project" id="three">
-                <div class="title">
-                    <!-- <img src="../assets/clothing.svg" alt="Project 3"> -->
-                    <h3>TryDrobe</h3>
-                </div>
-                <p>A webapp made to allow users to try different cloth combinations and styles. <br>Technologies used:
-                    HTML, CSS, JS</p>
+    <section id="portfolio" class=" justify-center">
+        <div>
+            <div class="text-center">Projects</div>
+            <div class="flex items-center justify-around p-4 m-5">
+                <div class="min-h-80 min-w-60 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-amber-500">Card1 </div>
+                <div class="min-h-80 min-w-60 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer bg-amber-500">Card2</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+     <div class="flex items-center justify-center"> 
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Follow me on <a href="https://www.linkedin.com/in/satyam-shukla-88517927a">LinkedIn</a> | <a href="https://github.com/TheGoodCoder12">GitHub</a></p>
-    </footer>
-
-    <script src="../scripts/script.js"></script>
-</body>
-
+         <section class="text-3xl">
+             Contact me at satyam.strange93@gmail.com
+            </section>
+        </div>
+            
+            <footer class="flex items-center justify-center">
+                <p>Follow me on <a class="hover:underline" href="https://www.linkedin.com/in/satyam-shukla-88517927a">LinkedIn</a> | <a class="hover:underline" href="https://github.com/Satyam4123">GitHub</a></p>
+            </footer>
+            
+            <script src="../scripts/script.js"></script>
+        </body>
+        
 </html>
